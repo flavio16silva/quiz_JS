@@ -1,6 +1,6 @@
 // ------------------ Dados Iniciais -------------
 let questaoAtual = 0
-
+let respostaCorretas = 0
 
 mostrarQuestoes()
 
@@ -19,10 +19,26 @@ function mostrarQuestoes(){
         for( let i in q.options){
             opcaoHtml += `<div data-op="${i}" class="option"><span>${parseInt(i)+1}</span> ${q.options[i]}</div>`
         }
-        document.querySelector('.options').innerHTML = opcaoHtml
+        document.querySelector('.options').innerHTML = opcaoHtml //inserindo na tela
 
-
+        /* Selecionando uma das questões com um evento de click na tela;
+        Ouvindo pelo addEventListener;               
+        */
+       document.querySelectorAll('.options .option').forEach(item => {
+            item.addEventListener('click', opcaoClickEvento)
+       })
     } else {
         //acaba as questões
     }
+}
+
+//Pegando elemento especifico com o target
+function opcaoClickEvento(e){
+    let opcaoClick = parseInt(e.target.getAttribute('data-op')) //de string para inteiro
+    if(questions[questaoAtual].answer === opcaoClick){
+        console.log('Acertou')
+    } else {
+        console.log('Errou')
+    }
+
 }
