@@ -77,6 +77,7 @@ function finalQuiz(){
     document.querySelector('.progress--bar').style.width = '100%'
 }
 
+//Função para resetar o quiz, acionada pelo botão
 function resetar(){
     respostaCorretas = 0
     questaoAtual = 0
