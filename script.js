@@ -4,6 +4,9 @@ let respostaCorretas = 0
 
 mostrarQuestoes()
 
+// -------------------- Eventos ------------------
+//document.querySelector('.scoreArea button').addEventListener('click', resetar)
+
 
 // ------------------ Funções --------------------
 function mostrarQuestoes(){
@@ -49,3 +52,34 @@ function opcaoClickEvento(e){
     mostrarQuestoes()
 
 }
+
+//Irá executar o oposto da função anterior. 
+function finalQuiz(){
+    let pontos = Math.floor((respostaCorretas / questions.length) * 100)
+
+    //verificação da pontuação
+    if(pontos < 30){
+        document.querySelector('.scoreText1').innerHTML = 'Estude nas madrugadas!'
+        document.querySelector('.scorePct').style.color = '#FF0000'
+    } else if(pontos >=30 && pontos < 70){
+        document.querySelector('.scoreText1').innerHTML = 'Muito Bom!!'
+        document.querySelector('.scorePct').style.color = '#FFFF00'
+    } else if (pontos >= 70) {
+        document.querySelector('.scoreText1').innerHTML = 'Parabens pelos estudos!!'
+        document.querySelector('.scorePct').style.color = '#0D630D'    
+    }
+
+    document.querySelector('.scorePct').innerHTML = `Acertou ${pontos}%`
+    document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${respostaCorretas}.`
+
+    document.querySelector('.scoreArea').style.display = 'block'
+    document.querySelector('.questionArea').style.display = 'none'
+    document.querySelector('.progress--bar').style.width = '100%'
+}
+
+// function resetar(){
+//     let questaoAtual = 0
+//     let respostaCorretas = 0
+//     mostrarQuestoes()
+
+// }
