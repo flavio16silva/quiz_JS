@@ -5,7 +5,7 @@ let respostaCorretas = 0
 mostrarQuestoes()
 
 // -------------------- Eventos ------------------
-//document.querySelector('.scoreArea button').addEventListener('click', resetar)
+document.querySelector('.scoreArea button').addEventListener('click', resetar)
 
 
 // ------------------ Funções --------------------
@@ -77,9 +77,9 @@ function finalQuiz(){
     document.querySelector('.progress--bar').style.width = '100%'
 }
 
-// function resetar(){
-//     let questaoAtual = 0
-//     let respostaCorretas = 0
-//     mostrarQuestoes()
+function resetar(){
+    let questaoAtual = 0
+    let respostaCorretas = 0
+    mostrarQuestoes()
 
-// }
+}
