@@ -78,8 +78,8 @@ function finalQuiz(){
 }
 
 function resetar(){
-    let questaoAtual = 0
-    let respostaCorretas = 0
+    respostaCorretas = 0
+    questaoAtual = 0
     mostrarQuestoes()
 
 }
