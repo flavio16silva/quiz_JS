@@ -66,15 +66,18 @@ function finalQuiz(){
     let pontos = Math.floor((respostaCorretas / questions.length) * 100) //variavel que armazena os pontos corretos em porcentagem
 
     //verificação da pontuação
-    if(pontos < 30){
+    if(pontos <= 50){
         document.querySelector('.scoreText1').innerHTML = 'Estude nas madrugadas!'
         document.querySelector('.scorePct').style.color = '#FF0000'
-    } else if(pontos >=30 && pontos < 70){
+    } else if(pontos > 50 && pontos < 70){
         document.querySelector('.scoreText1').innerHTML = 'Muito Bom!!'
         document.querySelector('.scorePct').style.color = '#FFFF00'
-    } else if (pontos >= 70) {
+    } else if (pontos >= 70 && pontos <= 90) {
         document.querySelector('.scoreText1').innerHTML = 'Parabens pelos estudos!!'
         document.querySelector('.scorePct').style.color = '#0D630D'    
+    } else if(pontos > 90 ) {
+        document.querySelector('.scoreText1').innerHTML = 'O certificado é seu!!!'
+        document.querySelector('.scorePct').style.color = '#01361c' 
     }
 
     document.querySelector('.scorePct').innerHTML = `Acertou ${pontos}%` //localizar a area dos pontos de acertos
