@@ -92,6 +92,8 @@ function resetar(){
     questaoAtual = 0                                                  //zerando variavel das questões
     mostrarQuestoes()                                                 //chama a função para mostrar as questões  
 
+    document.querySelector('.retorno_nome').innerHTML = ''
+
 }
 
 
