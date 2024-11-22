@@ -28,7 +28,7 @@ let questions = [
         answer: 1
     },
     {
-        question: 'Um arquivo javascript externo precisa ter a tag script',
+        question: 'Um arquivo javascript externo precisa ter a tag script?',
         options: [
             'Verdade',
             'Falso'
@@ -74,7 +74,7 @@ let questions = [
         answer: 2
     },
     {
-        question: 'Como fazer um if que executa um código caso "i" for diferente de 5',
+        question: 'Como fazer um if que executa um código caso "i" for diferente de 5?',
         options: [
             'if (i != 5)',
             'if (i <> 5)',
