@@ -3,6 +3,8 @@ let questaoAtual = 0         //variavel que armazena o valor da questao atual
 let respostaCorretas = 0     //variavel que armazena as opções corretas
 
 
+
+
 mostrarQuestoes()            //chama a função que mostra as questões
 
 // -------------------- Eventos ------------------
@@ -90,4 +92,11 @@ function resetar(){
     questaoAtual = 0                                                  //zerando variavel das questões
     mostrarQuestoes()                                                 //chama a função para mostrar as questões  
 
+}
+
+
+// Pegando nome e passando para outra tela:
+let nomeDigitado = localStorage.getItem('nome')
+if (nomeDigitado) {
+    document.querySelector('.retorno_nome').innerHTML = nomeDigitado
 }
