@@ -10,15 +10,39 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    background-color: #4eaf8f;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Titulo */
 h1 {
     color: #FFF;
     margin: 20px 0;
 }
+/* Subtitulo */
+h3 {
+    color: #fff;
+    text-align:justify;
+}
 
+/* Boas vindas */
+.outro_texto{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    
+}
+/* Nome da pessoa que pegará */
+.outro_texto .retorno_nome {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* barra de progresso */
 .progress {
     height: 5px;
     position: fixed;
@@ -26,6 +50,8 @@ h1 {
     top: 0;
     right: 0;
 }
+
+/* barra de progresso - cor */
 .progress--bar {
     background-color: #00FF00;
     height: 100%;
