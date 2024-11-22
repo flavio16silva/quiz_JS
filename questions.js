@@ -36,6 +36,16 @@ let questions = [
         answer: 1
     },
     {
+        question: 'Como você acessa a propriedade nome de um objeto chamado meuObjeto?',
+        options: [
+            'meuObjeto["nome"]',
+            'meuObjeto->nome',
+            'meuObjeto.nome()',
+            'meuObjeto: nome'
+        ],
+        answer: 0
+    },
+    {
         question: 'Como escrever um "Olá Mundo" em um alertbox?',
         options: [
             'alertBox("Olá Mundo")',
@@ -74,6 +84,16 @@ let questions = [
         answer: 2
     },
     {
+        question: 'Como você adiciona um item ao final de um array chamado meuArray?',
+        options: [
+            'meuArray.add("novoItem")',
+            'meuArray.push("novoItem")',
+            'meuArray.insert("novoItem")',
+            'meuArray.append("novoItem")'
+        ],
+        answer: 1
+    },
+    {
         question: 'Como fazer um if que executa um código caso "i" for diferente de 5?',
         options: [
             'if (i != 5)',
@@ -92,4 +112,37 @@ let questions = [
         ],
         answer: 0
     },
+    {
+        question: 'Qual dos seguintes métodos é usado para exibir mensagens no console do navegador?',
+        options: [
+            'alert("Olá Mundo")',
+            'console.show("Olá Mundo")',
+            'console.log("Olá Mundo")',
+            'print("Olá Mundo")'
+        ],
+        answer: 2
+    },
+    {
+        question: 'Como você cria uma variável em JavaScript?',
+        options: [
+            'let x = 10',
+            'variable x = 10',
+            'var x => 10',
+            'const x <- 10'
+        ],
+        answer: 0
+    },
+    {
+        question: 'Qual é a sintaxe correta de um operador ternário em JavaScript?',
+        options: [
+            'if (condição) ? valor1 : valor2',
+            'condição ? valor1 : valor2',
+            'condição : valor1 ? valor2',
+            'condição ? valor1, valor2'
+        ],
+        answer: 1
+    }
+ 
 ];
+
+console.log(questions.length)
