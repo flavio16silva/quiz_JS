@@ -145,4 +145,4 @@ let questions = [
  
 ];
 
-console.log(questions.length)
+// console.log(questions.length)
