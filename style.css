@@ -21,7 +21,9 @@ body {
 /* Titulo */
 h1 {
     color: #FFF;
-    margin: 20px 0;
+    margin-bottom: 30px ;
+    margin-top: -450px;
+    position: fixed;
 }
 /* Subtitulo */
 h3 {
@@ -149,7 +151,8 @@ h3 {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 350px;
     color: #FFF;
     font-size: 13px;
+    position: fixed;
 }
